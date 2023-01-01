@@ -1,0 +1,9 @@
+{
+  "__main__": [
+    "__main__.reverse",
+    "__main__.func2"
+  ],
+  "__main__.func2": [
+    "__main__.func1"
+  ]
+}

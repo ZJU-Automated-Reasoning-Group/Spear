@@ -1,0 +1,8 @@
+{
+  "__main__": [
+    "module1.func2"
+  ],
+  "module1.func2": [
+    "module2.func1"
+  ]
+}

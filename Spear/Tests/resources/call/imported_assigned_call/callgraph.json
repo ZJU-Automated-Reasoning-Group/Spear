@@ -1,0 +1,8 @@
+{
+  "__main__": [
+    "module.func"
+  ],
+  "module.func": [
+    "__main__.param_func"
+  ]
+}

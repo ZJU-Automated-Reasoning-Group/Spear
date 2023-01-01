@@ -1,0 +1,9 @@
+{
+  "module": [
+    "module.C"
+  ],
+  "__main__": [
+    "module.C.__init__",
+    "module.C.func"
+  ]
+}

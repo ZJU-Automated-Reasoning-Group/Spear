@@ -1,0 +1,10 @@
+{
+  "__main__": [
+    "__main__.C",
+    "__main__.func",
+    "__main__.C.f"
+  ],
+  "__main__.func": [
+    "__main__.func.inner"
+  ]
+}

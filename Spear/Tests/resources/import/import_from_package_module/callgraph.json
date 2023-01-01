@@ -1,0 +1,6 @@
+{
+  "__main__": [
+    "package.module.func1",
+    "package.module.func2"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "__main__": [
+    "__main__.A",
+    "__main__.B",
+    "__main__.A.func1",
+    "__main__.B.func2"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "__main__": [
+    "__main__.A",
+    "__main__.B",
+    "__main__.C",
+    "__main__.C.__init__"
+  ],
+  "__main__.C.__init__": [
+    "__main__.A.__init__",
+    "builtins.super"
+  ]
+}

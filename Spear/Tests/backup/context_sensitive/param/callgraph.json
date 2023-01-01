@@ -1,0 +1,15 @@
+{
+  "__main__": [
+    "__main__.callCaller"
+  ],
+  "__main__.callCaller": [
+    "__main__.caller1",
+    "__main__.caller2"
+  ],
+  "__main__.caller1": [
+    "__main__.func1"
+  ],
+  "__main__.caller2": [
+    "__main__.func2"
+  ]
+}

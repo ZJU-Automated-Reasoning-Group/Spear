@@ -1,0 +1,8 @@
+{
+  "__main__": [
+    "__main__.C",
+    "__main__.transfer",
+    "__main__.transfer.inner",
+    "__main__.func1"
+  ]
+}

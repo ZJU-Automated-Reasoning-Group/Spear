@@ -1,0 +1,30 @@
+{
+  "__main__": [
+    "__main__.A",
+    "__main__.B",
+    "__main__.C",
+    "__main__.D",
+    "__main__.E",
+    "__main__.D.__init__",
+    "__main__.E.__init__"
+  ],
+  "__main__.D.__init__": [
+    "__main__.A.__init__",
+    "builtins.super"
+  ],
+  "__main__.E.__init__": [
+    "__main__.A.__init__",
+    "builtins.super"
+  ],
+  "__main__.A.__init__": [
+    "__main__.B.__init__",
+    "__main__.C.__init__",
+    "builtins.super"
+  ],
+  "__main__.B.__init__": [
+    "__main__.D.func"
+  ],
+  "__main__.C.__init__": [
+    "__main__.E.func"
+  ]
+}

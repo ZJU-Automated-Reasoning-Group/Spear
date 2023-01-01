@@ -1,0 +1,10 @@
+{
+  "__main__": [
+    "__main__.func",
+    "__main__.func.nested"
+  ],
+  "__main__.func.nested": [
+    "__main__.f0",
+    "__main__.f1"
+  ]
+}

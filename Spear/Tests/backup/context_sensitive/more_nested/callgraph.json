@@ -1,0 +1,13 @@
+{
+  "__main__": [
+    "__main__.C",
+    "__main__.getF",
+    "__main__.func1"
+  ],
+  "__main__.getF": [
+    "__main__.getF.inner"
+  ],
+  "__main__.getF.inner": [
+    "__main__.getF.inner.move"
+  ]
+}

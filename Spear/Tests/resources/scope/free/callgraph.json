@@ -1,0 +1,12 @@
+{
+  "__main__": [
+    "__main__.func"
+  ],
+  "__main__.func": [
+    "__main__.func.inner"
+  ],
+  "__main__.func.inner": [
+    "__main__.g",
+    "__main__.gg"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "__main__": [
+    "__main__.Wrapper",
+    "__main__.Wrapper.__init__",
+    "__main__.Wrapper.get",
+    "__main__.func1"
+  ],
+  "__main__.Wrapper.__init__": [
+    "__main__.Wrapper.set"
+  ],
+  "__main__.Wrapper.set": [
+    "__main__.Wrapper.doSet"
+  ]
+}
