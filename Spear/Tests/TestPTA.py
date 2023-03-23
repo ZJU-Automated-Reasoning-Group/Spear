@@ -57,8 +57,6 @@ class TestBase(unittest.TestCase):
 if __name__ == "__main__":
     def getPTATest(path):
         return lambda self: self._test(PTA, path)
-    # def getCSPTATest(path):
-    #     return lambda self: self._test(CSPTA, path)
 
     resourcePath = os.path.join(os.path.dirname(__file__), "resources")
     tests = []

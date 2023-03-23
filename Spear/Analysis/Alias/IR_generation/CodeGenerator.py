@@ -7,7 +7,6 @@ from Spear.Analysis.Alias.IR.FunctionCodeBlock import FunctionCodeBlock
 from Spear.Analysis.Alias.IR.ClassCodeBlock import ClassCodeBlock
 from Spear.Analysis.Alias.IR.IRStmts import *
 
-
 if typing.TYPE_CHECKING:
     from Spear.Analysis.Alias.ModuleManager import ModuleManager
 

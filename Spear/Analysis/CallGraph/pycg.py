@@ -19,5 +19,3 @@ if packaging.version.Version(pycg_version)>packaging.version.Version("0.0.3"):
 
     pycg.pycg.CallGraphGeneratorPyCG = CallGraphGenerator
 """
-
-

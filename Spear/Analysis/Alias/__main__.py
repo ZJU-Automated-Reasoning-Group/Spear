@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 
-# from Falcon.Alias.CSPTA.Analysis import Analysis as csAnalysis
 from Spear.Analysis.Alias.ModuleManager import ModuleManager
 from Spear.Analysis.Alias.PTA.Analysis import Analysis
 
@@ -26,11 +25,6 @@ if __name__ == "__main__":
                            nargs="+",
                            help="Add library modules as entry points. Just like how you run program "
                                 "using \"python -m \"."
-                           )
-    argparser.add_argument("-cs", "--context-sensitive",
-                           action="store_true",
-                           default=False,
-                           help="Enable context sensitive. It may cost longer time."
                            )
     argparser.add_argument("-o", "--output",
                            required=True,
@@ -77,10 +71,6 @@ if __name__ == "__main__":
         exit()
 
     print("IR generation is done, start Point-to Analysis...                ")
-    # if args.context_sensitive:
-    #    analysis = csAnalysis(verbose=True)
-    # else:
-    #    analysis = Analysis(verbose=True)
     analysis = Analysis(verbose=True)
 
     entrys = mm.getEntrys()

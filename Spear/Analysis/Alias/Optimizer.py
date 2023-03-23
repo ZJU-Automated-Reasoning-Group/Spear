@@ -1,7 +1,8 @@
 from typing import Any, Dict, List, Set, Tuple
 
 from Spear.Analysis.Alias.IR.CodeBlock import CodeBlock
-from Spear.Analysis.Alias.IR.IRStmts import Assign, Call, GetAttr, IRStmt, New, NewClass, NewFunction, NewStaticMethod, NewSuper, \
+from Spear.Analysis.Alias.IR.IRStmts import Assign, Call, GetAttr, IRStmt, New, NewClass, NewFunction, NewStaticMethod, \
+    NewSuper, \
     SetAttr, Variable
 
 DEFINED_ASSIGN = 0

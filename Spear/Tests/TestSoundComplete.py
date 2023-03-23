@@ -1,7 +1,7 @@
 import json
 import os
 
-import Spear.Analysis.Alias.CSPTA.Analysis as CSPTA
+import Spear.Analysis.Alias.PTA.Analysis as PTA
 from Spear.Analysis.Alias.ModuleManager import ModuleManager
 
 
@@ -73,5 +73,5 @@ if __name__ == "__main__":
 
             if not os.path.isdir(subitemPath):
                 continue
-            test.test(CSPTA, subitemPath)
+            test.test(PTA, subitemPath)
         test.print()
