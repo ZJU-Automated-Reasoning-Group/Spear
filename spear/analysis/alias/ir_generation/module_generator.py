@@ -2,10 +2,10 @@ import ast
 import typing
 
 from spear.analysis.alias.ir_generation.code_generator import CodeBlockGenerator
-from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 
 if typing.TYPE_CHECKING:
-    from spear.analysis.alias.ModuleManager import ModuleManager
+    from spear.analysis.alias.module_manager import ModuleManager
 
 # builtin_names = list(builtins.__dict__.keys())
 builtin_names = ["object"]

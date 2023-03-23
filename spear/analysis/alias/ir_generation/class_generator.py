@@ -1,3 +1,7 @@
+"""
+This module contains the ClassGenerator class, which is responsible for generating IR code for a Python class definition.
+"""
+
 import ast
 from typing import Set
 import typing
@@ -12,7 +16,7 @@ from spear.analysis.alias.ir_generation.code_generator import Attribute, CodeBlo
     isLoad, isStore, resolveName
 
 if typing.TYPE_CHECKING:
-    from ..ModuleManager import ModuleManager
+    from ..module_manager import ModuleManager
 
 
 class ClassGenerator(CodeBlockGenerator):

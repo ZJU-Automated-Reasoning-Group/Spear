@@ -2,8 +2,8 @@ import argparse
 import json
 import os
 
-from spear.analysis.alias.ModuleManager import ModuleManager
-from spear.analysis.alias.pta.Analysis import Analysis
+from spear.analysis.alias.module_manager import ModuleManager
+from spear.analysis.alias.pta.analysis import Analysis
 
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()

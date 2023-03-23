@@ -3,8 +3,8 @@ from collections import defaultdict
 from typing import Dict, Generator, List, Set, Tuple
 
 from spear.analysis.alias.pta import json_utils
-from spear.analysis.alias.pta.Objects import ClassObject, FakeObject
-from spear.analysis.alias.pta.PointToSet import PointToSet
+from spear.analysis.alias.pta.objects import ClassObject, FakeObject
+from spear.analysis.alias.pta.points_to_set import PointsToSet
 
 # Here MRO mean an order in which methods are resolved, a tuple consists of class objects
 MRO = Tuple[ClassObject, ...]
@@ -14,7 +14,7 @@ SubclassInfo = Tuple[ClassObject, int]
 class ClassHiearchy:
     mros: Dict[ClassObject, Set[MRO]]
     subClasses: Dict[ClassObject, Set[SubclassInfo]]
-    pointToSet: PointToSet
+    pointToSet: PointsToSet
 
     def __init__(self, point_to_set):
         self.mros = defaultdict(set)

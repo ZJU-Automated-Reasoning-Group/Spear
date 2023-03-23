@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Dict, Set, Tuple
 
-from spear.analysis.alias.pta.Pointers import VarPtr
+from spear.analysis.alias.pta.pointers import VarPtr
 from spear.analysis.alias.ir.ir_stmts import IRStmt
 
 

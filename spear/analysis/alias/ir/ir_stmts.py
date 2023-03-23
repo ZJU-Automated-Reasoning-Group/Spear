@@ -5,7 +5,7 @@ if typing.TYPE_CHECKING:
     from spear.analysis.alias.ir.code_block import CodeBlock
     from spear.analysis.alias.ir.function_code_block import FunctionCodeBlock
     from spear.analysis.alias.ir.class_code_block import ClassCodeBlock
-    from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+    from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 
 
 class Variable:

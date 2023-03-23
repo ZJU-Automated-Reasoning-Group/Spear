@@ -1,4 +1,4 @@
-from spear.analysis.alias.pta.Objects import BuiltinObject, ClassMethodObject, ClassObject, FakeObject, \
+from spear.analysis.alias.pta.objects import BuiltinObject, ClassMethodObject, ClassObject, FakeObject, \
     FunctionObject, ModuleObject, StaticMethodObject, SuperObject
 
 OBJ_MODULE = 0

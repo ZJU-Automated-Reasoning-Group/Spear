@@ -2,9 +2,9 @@ import json
 import os
 import shutil
 
-from spear.analysis.alias.ModuleManager import ModuleManager
+from spear.analysis.alias.module_manager import ModuleManager
 from spear.analysis.alias import json_utils
-from spear.analysis.alias.pta import Analysis
+from spear.analysis.alias.pta import analysis
 
 
 def testScript(path, filename):

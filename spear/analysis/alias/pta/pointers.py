@@ -1,7 +1,7 @@
 import typing
 
 if typing.TYPE_CHECKING:
-    from spear.analysis.alias.pta.Objects import Object
+    from spear.analysis.alias.pta.objects import Object
 from spear.analysis.alias.ir.ir_stmts import Variable
 
 

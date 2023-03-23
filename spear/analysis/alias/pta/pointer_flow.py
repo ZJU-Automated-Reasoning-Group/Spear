@@ -3,7 +3,7 @@ from collections import defaultdict
 from typing import Dict, Set
 
 from spear.analysis.alias.pta import json_utils
-from spear.analysis.alias.pta.Pointers import Pointer
+from spear.analysis.alias.pta.pointers import Pointer
 
 
 class PointerFlow:

@@ -1,9 +1,9 @@
 from typing import List, Tuple, Union
 
-from spear.analysis.alias.pta.Pointers import VarPtr
+from spear.analysis.alias.pta.pointers import VarPtr
 from spear.analysis.alias.ir.function_code_block import FunctionCodeBlock
 from spear.analysis.alias.ir.ir_stmts import NewBuiltin, NewClass, NewFunction
-from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 
 
 # Object's information should remain static as the pta proceeds.

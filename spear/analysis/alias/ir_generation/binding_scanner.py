@@ -1,3 +1,8 @@
+"""
+This module defines the BindingScanner class which is used to scan Python code for name binding operations.
+"""
+
+
 import ast
 from typing import Set
 

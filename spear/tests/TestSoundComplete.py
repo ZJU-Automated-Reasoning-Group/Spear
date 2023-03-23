@@ -1,8 +1,8 @@
 import json
 import os
 
-import spear.analysis.alias.pta.Analysis as PTA
-from spear.analysis.alias.ModuleManager import ModuleManager
+import spear.analysis.alias.pta.analysis as PTA
+from spear.analysis.alias.module_manager import ModuleManager
 
 
 def isSound(output, groundtruth):

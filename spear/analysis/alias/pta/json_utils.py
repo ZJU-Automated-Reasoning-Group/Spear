@@ -1,5 +1,5 @@
-from spear.analysis.alias.pta.Objects import Object
-from spear.analysis.alias.pta.Pointers import Pointer
+from spear.analysis.alias.pta.objects import Object
+from spear.analysis.alias.pta.pointers import Pointer
 
 
 def default(o):

@@ -12,7 +12,7 @@ from typing import List, Union
 
 from spear.analysis.alias.ir.code_block import CodeBlock
 from spear.analysis.alias.ir.ir_stmts import NewModule, SetAttr
-from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 from spear.analysis.alias.ir_generation.module_generator import ModuleGenerator
 
 LOAD_CONST = dis.opmap['LOAD_CONST']

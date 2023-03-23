@@ -1,22 +1,22 @@
 from collections import defaultdict
 from typing import Dict, List, Set, Tuple, Union
 
-from spear.analysis.alias.pta.ObjectPool import OBJ_BUILTIN, OBJ_CLASS, OBJ_CLASS_METHOD, OBJ_FAKE, OBJ_FUNCTION, \
+from spear.analysis.alias.pta.object_pool import OBJ_BUILTIN, OBJ_CLASS, OBJ_CLASS_METHOD, OBJ_FAKE, OBJ_FUNCTION, \
     OBJ_MODULE, OBJ_STATIC_METHOD, OBJ_SUPER, ObjectPool
-from spear.analysis.alias.pta.AttrGraph import AttrGraph
-from spear.analysis.alias.pta.BindingStmts import BindingStmts
+from spear.analysis.alias.pta.attr_graph import AttrGraph
+from spear.analysis.alias.pta.binding_stmts import BindingStmts
 from spear.analysis.alias.pta.class_hiearchy import MRO, ClassHiearchy
-from spear.analysis.alias.pta.Objects import ClassMethodObject, ClassObject, FakeObject, FunctionObject, Object, \
+from spear.analysis.alias.pta.objects import ClassMethodObject, ClassObject, FakeObject, FunctionObject, Object, \
     StaticMethodObject, SuperObject
-from spear.analysis.alias.pta.PointToSet import PointToSet
-from spear.analysis.alias.pta.PointerFlow import PointerFlow
-from spear.analysis.alias.pta.Pointers import AttrPtr, Pointer, VarPtr
+from spear.analysis.alias.pta.points_to_set import PointsToSet
+from spear.analysis.alias.pta.pointer_flow import PointerFlow
+from spear.analysis.alias.pta.pointers import AttrPtr, Pointer, VarPtr
 
 from spear.analysis.alias.ir.class_code_block import ClassCodeBlock
 from spear.analysis.alias.ir.code_block import CodeBlock
 from spear.analysis.alias.ir.ir_stmts import Assign, Call, DelAttr, GetAttr, IRStmt, NewBuiltin, NewClass, \
     NewFunction, NewModule, NewStaticMethod, NewSuper, SetAttr, Variable
-from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 
 FAKE_PREFIX = "$r_"
 
@@ -42,7 +42,7 @@ BIND_STMT = 2
 
 
 class Analysis:
-    pointToSet: PointToSet
+    pointToSet: PointsToSet
     callgraph: Dict[str, Set[str]]
     pointerFlow: PointerFlow
     attrGraph: AttrGraph
@@ -54,7 +54,7 @@ class Analysis:
     workList: List[Tuple[Pointer, Set[Object]]]
 
     def __init__(self, verbose=False):
-        self.pointToSet = PointToSet()
+        self.pointToSet = PointsToSet()
         self.callgraph = defaultdict(set)
         self.pointerFlow = PointerFlow()
         self.attrGraph = AttrGraph()

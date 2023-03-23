@@ -2,10 +2,14 @@ import argparse
 import json
 import os
 
-from spear.analysis.alias.ModuleManager import ModuleManager
-from spear.analysis.alias.pta.Analysis import Analysis
+from spear.analysis.alias.module_manager import ModuleManager
+from spear.analysis.alias.pta.analysis import Analysis
 
 if __name__ == "__main__":
+    print("Welcome to Spear!")
+    print("Spear is a tool for analyzing Python code's call graph and points-to information.")
+
+
     argparser = argparse.ArgumentParser()
     argparser.add_argument("path",
                            help="the path of working directory where scripts and modules are placed. "

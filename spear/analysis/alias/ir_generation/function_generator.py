@@ -10,7 +10,7 @@ from spear.analysis.alias.ir.function_code_block import FunctionCodeBlock
 from spear.analysis.alias.ir.ir_stmts import Variable
 
 if typing.TYPE_CHECKING:
-    from spear.analysis.alias.ModuleManager import ModuleManager
+    from spear.analysis.alias.module_manager import ModuleManager
 
 
 class FunctionGenerator(CodeBlockGenerator):

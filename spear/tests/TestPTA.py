@@ -4,8 +4,8 @@ import unittest
 from typing import Dict, List
 
 from spear.analysis.alias.ir.code_block import CodeBlock
-from spear.analysis.alias.ModuleManager import ModuleManager
-import spear.analysis.alias.pta.Analysis as PTA
+from spear.analysis.alias.module_manager import ModuleManager
+import spear.analysis.alias.pta.analysis as PTA
 
 
 def countAllStmts(code_blocks: List[CodeBlock]):

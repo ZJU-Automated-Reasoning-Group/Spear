@@ -5,7 +5,7 @@ from typing import List
 from spear.analysis.alias.ir.ir_stmts import IRStmt, NewClass, NewFunction, Variable
 
 if typing.TYPE_CHECKING:
-    from spear.analysis.alias.ir.ModuleCodeBlock import ModuleCodeBlock
+    from spear.analysis.alias.ir.module_code_block import ModuleCodeBlock
 
 
 class CodeBlock:

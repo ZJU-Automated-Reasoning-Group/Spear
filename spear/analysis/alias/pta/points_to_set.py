@@ -3,11 +3,11 @@ from collections import defaultdict
 from typing import Dict, Set
 
 from spear.analysis.alias.pta import json_utils
-from spear.analysis.alias.pta.Objects import Object
-from spear.analysis.alias.pta.Pointers import AttrPtr, Pointer, VarPtr
+from spear.analysis.alias.pta.objects import Object
+from spear.analysis.alias.pta.pointers import AttrPtr, Pointer, VarPtr
 
 
-class PointToSet:
+class PointsToSet:
     varPtrSet: Dict[VarPtr, Set]
     attrPtrSet: Dict[Object, Dict[str, Set]]
 
