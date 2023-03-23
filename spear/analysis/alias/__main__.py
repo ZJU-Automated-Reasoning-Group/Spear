@@ -27,7 +27,7 @@ if __name__ == "__main__":
                                 "using \"python -m \"."
                            )
     argparser.add_argument("-o", "--output",
-                           required=False,
+                           required=True,
                            help="The file path where output callgraph will be stored. The output format will be json."
                            )
     argparser.add_argument("-nd", "--no-dependency",
@@ -48,8 +48,9 @@ if __name__ == "__main__":
         print("Error: No entry point is provided.")
         exit()
 
-    # mm = ModuleManager(args.path, verbose=True, dependency=not args.no_dependency)
-    mm = ModuleManager(args.path, verbose=True)
+    fp = open(args.output, "w")
+
+    mm = ModuleManager(args.path, verbose=True, dependency=not args.no_dependency)
     try:
         if args.all_files:
             for file in os.listdir(args.path):
@@ -71,19 +72,15 @@ if __name__ == "__main__":
 
     print("IR generation is done, start Point-to Analysis...                ")
     analysis = Analysis(verbose=True)
-    # analysis = Analysis(verbose=True)
 
     entrys = mm.getEntrys()
     analysis.analyze(entrys)
     print("Point-to Analysis is done, start writing to file                ")
 
-    print(analysis.pointToSet.to_json())
-
-    # fp = open(args.output, "w")
-    # callgraph = analysis.callgraph.export()  # In some version of Python3, no export() method?
-    # if args.include:
-    #    callgraph = {k: v for k, v in callgraph.items() if k.startswith(args.include)}
-    # json.dump(callgraph, fp, indent=4)
-    # fp.close()
+    callgraph = analysis.callgraph.export()
+    if args.include:
+        callgraph = {k: v for k, v in callgraph.items() if k.startswith(args.include)}
+    json.dump(callgraph, fp, indent=4)
+    fp.close()
 
     print("All done.")
